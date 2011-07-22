@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Toolbox_Check_If_a_Number_Is_Prime.cs" />
+    <Compile Include="Toolbox_Factorize_Integer_Numbers_Test.cs" />
     <Compile Include="Toolbox_Get_Fibonacci_Sequence_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
