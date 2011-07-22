@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ProjectEuler
+namespace ProjectEuler.Tools
 {
-    public static  class UtilityBelt
+    public static class Toolbox
     {
         public static IEnumerable<long> FibonacciSequence()
         {
@@ -19,13 +19,6 @@ namespace ProjectEuler
                 y = sum;
                 yield return y;
             }
-        }
-
-        public static IEnumerable<int> Range()
-        {
-            int i = 0;
-            while (true) yield return i++;
-        }
-
+        }        
     }
 }

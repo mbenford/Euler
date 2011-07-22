@@ -8,8 +8,8 @@
     <ProjectGuid>{4AA4C2A7-3725-4472-9629-250B72C64DE9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Problems</RootNamespace>
-    <AssemblyName>Problems</AssemblyName>
+    <RootNamespace>ProjectEuler.Problems</RootNamespace>
+    <AssemblyName>ProjectEuler.Problems</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,6 +45,13 @@
     <Compile Include="Problem2.cs" />
     <Compile Include="ProblemFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solution.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{4CA39F76-00FA-4044-85E1-8083969CD0A8}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

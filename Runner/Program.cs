@@ -12,24 +12,10 @@ namespace ProjectEuler
             if (args.Length > 0)
             {
                 int problemId;
-                if (int.TryParse(args[0], out problemId))
-                {
-                    Problem problem = ProblemFactory.GetProblem(problemId);
-                    if (problem == null)
-                    {
-                        Console.WriteLine("Problem #{0} not found", problemId);
-                        return;
-                    }
-
-                    long solution = problem.Solve();
-
-                    Console.WriteLine("Problem #{0}", problemId);
-                    Console.WriteLine("Solution: {0}", solution);
-                }
+                if (int.TryParse(args[0], out problemId))                    
+                    Runner.SolveProblem(problemId);
                 else
-                {
-                    Console.WriteLine("Problem Id must be an integer number");
-                }
+                    Console.WriteLine("Problem Id must be an integer value");
             }
             else
             {

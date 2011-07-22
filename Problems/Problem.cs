@@ -2,11 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
-namespace ProjectEuler
+namespace ProjectEuler.Problems
 {
     public abstract class Problem
     {
-        public abstract long Solve();
+        public abstract Solution Solve();
+        public virtual int Id
+        {
+            get
+            {
+                string typeName = this.GetType().Name;
+                var pattern = "^Problem(?<id>[0-9]+)$";
+                Match match = Regex.Match(typeName, pattern);
+                return Convert.ToInt32(match.Groups["id"].Value);
+            }
+        }
     }
 }

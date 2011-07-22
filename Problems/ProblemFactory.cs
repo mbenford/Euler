@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Reflection;
 
-namespace ProjectEuler
+namespace ProjectEuler.Problems
 {
     public static class ProblemFactory
     {
@@ -18,18 +18,15 @@ namespace ProjectEuler
         private static Type GetProblemType(int problemId)
         {
             string typeName = String.Format("Problem{0}", problemId);
-            var types = from type in GetProblemTypesOnProject()
-                       where type.Name == typeName
-                       select type;
-
-            return types.SingleOrDefault();
+            return GetProblemTypesOnProject()
+                .Where(type => type.Name == typeName)
+                .SingleOrDefault();
         }
         private static IEnumerable<Type> GetProblemTypesOnProject()
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
-            return from type in assembly.GetTypes()
-                   where type.IsClass && type.IsSubclassOf(typeof(Problem))
-                   select type;
+            return assembly.GetTypes()
+                   .Where(type => type.IsClass && type.IsSubclassOf(typeof(Problem)));                   
         }
     }
 }
