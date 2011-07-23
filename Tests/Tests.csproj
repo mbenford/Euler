@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Problem_Check_Solution_Remains_Correct.cs" />
+    <Compile Include="Toolbox_Check_If_a_Number_Is_Palindromic.cs" />
     <Compile Include="Toolbox_Check_If_a_Number_Is_Prime.cs" />
     <Compile Include="Toolbox_Factorize_Integer_Numbers.cs" />
     <Compile Include="Toolbox_Get_Fibonacci_Sequence.cs" />
