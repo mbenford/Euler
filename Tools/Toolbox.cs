@@ -57,5 +57,22 @@ namespace ProjectEuler.Tools
 
             return isPrime;
         }
+        
+        public static bool IsPalindromic(long number)
+        {
+            Func<long, long> Reverse = (x) => 
+            {
+                long result = 0;
+                while (number > 0)
+                {
+                    result = result * 10 + number % 10;
+                    number /= 10;
+                }
+
+                return result;
+            };
+
+            return number == Reverse(number);
+        }
     }
 }
