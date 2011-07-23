@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using ProjectEuler.Tools;
 
 namespace ProjectEuler.Tests
 {
     [TestFixture]
-    public class Toolbox_Factorize_Integer_Numbers_Test
+    public class Toolbox_Factorize_Integer_Numbers
     {
         [Test]
         public void Returns_2_When_Factorizing_2()

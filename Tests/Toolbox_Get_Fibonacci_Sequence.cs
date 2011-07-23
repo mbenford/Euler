@@ -8,7 +8,7 @@ using ProjectEuler.Tools;
 namespace ProjectEuler.Tests
 {
     [TestFixture]
-    public class Toolbox_Get_Fibonacci_Sequence_Test
+    public class Toolbox_Get_Fibonacci_Sequence
     {
         [Test]
         public void Return_1_When_Taking_1()

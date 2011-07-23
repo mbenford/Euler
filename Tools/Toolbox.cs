@@ -23,46 +23,35 @@ namespace ProjectEuler.Tools
         
         public static IEnumerable<long> Factorize(long number)
         {
-            var factors = new List<long>();
-
             if (Toolbox.IsPrime(number))
-                factors.Add(number);
+                yield return number;
             else
             {
                 long divisor = 2;
-                long quotient = number;
-                while (quotient > 1)
+                while (number > 1)
                 {
-                    if (quotient % divisor == 0)
+                    if (number % divisor == 0)
                     {
-                        factors.Add(divisor);
-                        quotient /= divisor;
+                        yield return divisor;
+                        number /= divisor;
                     }
                     else
-                        divisor++;
+                        divisor = ++divisor % 2 == 0 ? ++divisor : divisor;
                 }
             }
-
-            return factors;
         }
 
         public static bool IsPrime(long number)
         {
-            bool isPrime;
+            bool isPrime = true;
 
-            if (number > 2 && number % 2 == 0)
-                isPrime = false;
-            else
+            int max = (int)Math.Truncate(Math.Sqrt(number));
+            for (int i = 2; i <= max; i++)
             {
-                isPrime = true;
-                int max = (int)Math.Truncate(Math.Sqrt(number));
-                for (int i = 2; i <= max; i++)
+                if (number % i == 0)
                 {
-                    if (number % i == 0)
-                    {
-                        isPrime = false;
-                        break;
-                    }
+                    isPrime = false;
+                    break;
                 }
             }
 
