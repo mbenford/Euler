@@ -47,6 +47,8 @@
     <Compile Include="Toolbox_Factorize_Integer_Numbers.cs" />
     <Compile Include="Toolbox_Get_Fibonacci_Sequence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Toolbox_Get_Greatest_Common_Divisor.cs" />
+    <Compile Include="Toolbox_Get_Least_Common_Multiple.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Problems\Problems.csproj">

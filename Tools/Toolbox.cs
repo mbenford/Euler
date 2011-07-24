@@ -57,10 +57,10 @@ namespace ProjectEuler.Tools
 
             return isPrime;
         }
-        
+
         public static bool IsPalindromic(long number)
         {
-            Func<long, long> Reverse = (x) => 
+            Func<long, long> Reverse = (x) =>
             {
                 long result = 0;
                 while (x > 0)
@@ -73,6 +73,40 @@ namespace ProjectEuler.Tools
             };
 
             return number == Reverse(number);
+        }
+
+        public static long GetLeastCommonMultiple(IEnumerable<long> numbers)
+        {
+            return GetLeastCommonMultiple(numbers.ToArray());
+        }
+        
+        public static long GetLeastCommonMultiple(params long[] numbers)
+        {
+            return numbers.Aggregate((a, b) => GetLCM(a, b));
+        }
+
+        private static long GetLCM(long a, long b)
+        {
+            return (a * b) / GetGCD(a, b);
+        }
+
+        public static long GetGreatestCommonDivisor(IEnumerable<long> numbers)
+        {
+            return GetGreatestCommonDivisor(numbers.ToArray());
+        }
+
+        public static long GetGreatestCommonDivisor(params long[] numbers)
+        {
+            return numbers.Aggregate((a, b) => GetGCD(a, b));
+        }
+
+        private static long GetGCD(long a, long b)
+        {            
+            long min = Math.Min(a, b);
+            long max = Math.Max(a, b);
+            if (min == 0) return max;
+
+            return GetGCD(b, a % b);
         }
     }
 }

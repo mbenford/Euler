@@ -10,8 +10,7 @@ namespace ProjectEuler.Problems
     {
         public override Solution Solve()
         {                                  
-            long value = Toolbox.Factorize(600851475143)
-                .Where(x => Toolbox.IsPrime(x))
+            long value = Toolbox.Factorize(600851475143)                
                 .Max();
 
             return new Solution(value);
