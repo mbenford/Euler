@@ -20,7 +20,7 @@ namespace ProjectEuler.Tools
                 yield return y;
             }
         }
-        
+
         public static IEnumerable<long> Factorize(long number)
         {
             if (Toolbox.IsPrime(number))
@@ -63,10 +63,10 @@ namespace ProjectEuler.Tools
             Func<long, long> Reverse = (x) => 
             {
                 long result = 0;
-                while (number > 0)
+                while (x > 0)
                 {
-                    result = result * 10 + number % 10;
-                    number /= 10;
+                    result = result * 10 + x % 10;
+                    x /= 10;
                 }
 
                 return result;
