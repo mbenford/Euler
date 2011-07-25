@@ -49,6 +49,7 @@
     <Compile Include="Problem4.cs" />
     <Compile Include="Problem5.cs" />
     <Compile Include="Problem6.cs" />
+    <Compile Include="Problem7.cs" />
     <Compile Include="ProblemFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solution.cs" />

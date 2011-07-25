@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections;
 
 namespace ProjectEuler.Tools
 {
@@ -107,6 +108,39 @@ namespace ProjectEuler.Tools
             if (min == 0) return max;
 
             return GetGCD(b, a % b);
+        }
+        
+        public static IEnumerable<int> GetPrimes(int limit)
+        {
+            BitArray numbers = new BitArray(limit - 1, true);
+
+            Func<int, int> GetNext = (n) =>
+            {                
+                for (int i = n + 1; i <= limit; i++)
+                {
+                    if (numbers[i - 2]) return i;
+                }
+
+                return 0;
+            };
+
+            int number = 2;
+            while (number != 0)
+            {
+                for (int i = number * 2; i <= limit; i += number)
+                {
+                    numbers[i - 2] = false;
+                }
+                number = GetNext(number);
+            }
+                                                           
+            var primes = new List<int>();
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i]) primes.Add(i + 2);
+            }
+                                 
+            return primes;
         }
     }
 }
