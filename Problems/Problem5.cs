@@ -10,7 +10,7 @@ namespace ProjectEuler.Problems
     {
         public override Solution Solve()
         {
-            var divisors = Enumerable.Range(2, 19).Cast<long>();
+            var divisors = Enumerable.Range(2, 19).Select(x => (long)x);
             var lcm = Toolbox.GetLeastCommonMultiple(divisors);
             
             return new Solution(lcm);
