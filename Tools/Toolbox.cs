@@ -110,7 +110,7 @@ namespace ProjectEuler.Tools
             return GetGCD(b, a % b);
         }
         
-        public static IEnumerable<int> GetPrimes(int limit)
+        public static IEnumerable<int> GetPrimeNumbers(int limit)
         {
             BitArray numbers = new BitArray(limit - 1, true);
 

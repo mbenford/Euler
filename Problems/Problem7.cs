@@ -10,7 +10,7 @@ namespace ProjectEuler.Problems
     {
         public override Solution Solve()
         {
-            int prime = Toolbox.GetPrimes(1000000).ElementAt(10000);
+            int prime = Toolbox.GetPrimeNumbers(1000000).ElementAt(10000);
 
             return new Solution(prime);
         }
