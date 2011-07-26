@@ -70,5 +70,14 @@ namespace ProjectEuler.Tests
             Assert.AreEqual(104743, solution.Value);
         }
 
+        [Test]
+        public void Check_If_Solution_For_Problem_8_Remains_Correct()
+        {
+            Problem problem = new Problem8();
+            Solution solution = problem.Solve();
+
+            Assert.AreEqual(40824, solution.Value);
+        }
+
     }
 }
