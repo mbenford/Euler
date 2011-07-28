@@ -13,7 +13,7 @@ namespace ProjectEuler.Tests
             Problem problem = new Problem1();
             Solution solution = problem.Solve();
 
-            Assert.AreEqual(233168, solution.Value);
+            Assert.IsTrue(233168 == solution.Value);
         }
 
         [Test]
@@ -22,7 +22,7 @@ namespace ProjectEuler.Tests
             Problem problem = new Problem2();
             Solution solution = problem.Solve();
 
-            Assert.AreEqual(4613732, solution.Value);
+            Assert.IsTrue(4613732 == solution.Value);
         }
 
         [Test]
@@ -31,7 +31,7 @@ namespace ProjectEuler.Tests
             Problem problem = new Problem3();
             Solution solution = problem.Solve();
 
-            Assert.AreEqual(6857, solution.Value);
+            Assert.IsTrue(6857 == solution.Value);
         }
 
         [Test]
@@ -40,7 +40,7 @@ namespace ProjectEuler.Tests
             Problem problem = new Problem4();
             Solution solution = problem.Solve();
 
-            Assert.AreEqual(906609, solution.Value);
+            Assert.IsTrue(906609 == solution.Value);
         }
 
         [Test]
@@ -49,7 +49,7 @@ namespace ProjectEuler.Tests
             Problem problem = new Problem5();
             Solution solution = problem.Solve();
 
-            Assert.AreEqual(232792560, solution.Value);
+            Assert.IsTrue(232792560 == solution.Value);
         }
 
         [Test]
@@ -58,7 +58,7 @@ namespace ProjectEuler.Tests
             Problem problem = new Problem6();
             Solution solution = problem.Solve();
 
-            Assert.AreEqual(25164150, solution.Value);
+            Assert.IsTrue(25164150 == solution.Value);
         }
 
         [Test]
@@ -67,7 +67,7 @@ namespace ProjectEuler.Tests
             Problem problem = new Problem7();
             Solution solution = problem.Solve();
 
-            Assert.AreEqual(104743, solution.Value);
+            Assert.IsTrue(104743 == solution.Value);
         }
 
         [Test]
@@ -76,7 +76,7 @@ namespace ProjectEuler.Tests
             Problem problem = new Problem8();
             Solution solution = problem.Solve();
 
-            Assert.AreEqual(40824, solution.Value);
+            Assert.IsTrue(40824 == solution.Value);
         }
 
     }
