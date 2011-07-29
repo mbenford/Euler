@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Collections;
+using System.Numerics;
 
 namespace ProjectEuler.Tools
 {
@@ -110,7 +111,7 @@ namespace ProjectEuler.Tools
             return GetGCD(b, a % b);
         }
         
-        public static IEnumerable<int> GetPrimeNumbers(int limit)
+        public static IEnumerable<long> GetPrimeNumbers(int limit)
         {
             BitArray numbers = new BitArray(limit - 1, true);
 
@@ -134,13 +135,10 @@ namespace ProjectEuler.Tools
                 number = GetNext(number);
             }
                                                            
-            var primes = new List<int>();
             for (int i = 0; i < numbers.Length; i++)
             {
-                if (numbers[i]) primes.Add(i + 2);
+                if (numbers[i]) yield return i + 2;
             }
-                                 
-            return primes;
         }
     }
 }

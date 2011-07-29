@@ -8,7 +8,7 @@ namespace ProjectEuler.Problems
     {
         public override Solution Solve()
         {
-            int prime = Toolbox.GetPrimeNumbers(1000000).ElementAt(10000);
+            var prime = Toolbox.GetPrimeNumbers(1000000).ElementAt(10000);
 
             return new Solution(prime);
         }
