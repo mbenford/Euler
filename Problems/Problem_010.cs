@@ -7,7 +7,7 @@ using System.Numerics;
 
 namespace ProjectEuler.Problems
 {
-    public class Problem10 : Problem
+    public class Problem_010 : Problem
     {
         public override Solution Solve()
         {

@@ -17,7 +17,7 @@ namespace ProjectEuler.Problems
 
         private static Type GetProblemType(int problemId)
         {
-            string typeName = String.Format("Problem{0}", problemId);
+            string typeName = String.Format("Problem_{0:d3}", problemId);
             return GetProblemTypesOnProject()
                 .Where(type => type.Name == typeName)
                 .SingleOrDefault();

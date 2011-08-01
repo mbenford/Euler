@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace ProjectEuler.Problems
 {
-    public class Problem1 : Problem
+    public class Problem_001 : Problem
     {
         public override Solution Solve()
         {

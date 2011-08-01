@@ -4,7 +4,7 @@ using ProjectEuler.Tools;
 
 namespace ProjectEuler.Problems
 {
-    public class Problem3 : Problem
+    public class Problem_003 : Problem
     {
         public override Solution Solve()
         {                                  
