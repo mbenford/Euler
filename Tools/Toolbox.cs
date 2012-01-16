@@ -140,5 +140,23 @@ namespace ProjectEuler.Tools
                 if (numbers[i]) yield return i + 2;
             }
         }
+        
+        public static int[,] GenerateGridFromString(string value, int rows, int cols)
+        {
+            string[] values = value.Split(' ');
+
+            int[,] grid = new int[rows, cols];
+            int index = 0;
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    grid[i, j] = Convert.ToInt32(values[index++]);
+                }
+            }
+
+            return grid;
+        }
     }
 }
