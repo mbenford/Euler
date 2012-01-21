@@ -179,5 +179,20 @@ namespace ProjectEuler.Tools
                 .Select(factor => factor.Count() + 1)
                 .Aggregate((factor1, factor2) => factor1 * factor2);
         }
+        
+        public static IEnumerable<long> GetHailstoneSequence(int start)
+        {
+            long number = start * 2;            
+
+            while (number != 1)
+            {
+                if (number % 2 == 0)
+                    number /= 2;
+                else
+                    number = number * 3 + 1;
+
+                yield return number;
+            }
+        }
     }
 }
