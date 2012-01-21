@@ -2,7 +2,7 @@ using System;
 using NUnit.Framework;
 using ProjectEuler.Tools;
 
-namespace ProjectEuler.Tests
+namespace ProjectEuler.Tests.TooboxTests
 {
     [TestFixture]
     public class Check_If_a_Number_Is_Palindromic

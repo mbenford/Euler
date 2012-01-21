@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ProjectEuler.Tools;
 
 namespace ProjectEuler.Problems
 {
@@ -9,7 +10,18 @@ namespace ProjectEuler.Problems
     {
         public override Solution Solve()
         {
-            throw new NotImplementedException();
+            long result = 0;            
+
+            foreach (long number in Toolbox.GetTriangleNumbersSequence())
+            {
+                if (Toolbox.GetTheNumberOfDivisors(number) > 500)
+                {
+                    result = number;
+                    break;
+                }
+            }
+
+            return new Solution(result); ;
         }
     }
 }

@@ -158,5 +158,26 @@ namespace ProjectEuler.Tools
 
             return grid;
         }
+        
+        public static IEnumerable<long> GetTriangleNumbersSequence()
+        {
+            long i = 1;
+            long x = 0;
+            while (true)
+            {
+                x += i++;
+                yield return x;
+            }
+        }
+        
+        public static int GetTheNumberOfDivisors(long number)
+        {
+            if (number == 1) return 1;
+
+            return Toolbox.Factorize(number)
+                .GroupBy(x => x)
+                .Select(factor => factor.Count() + 1)
+                .Aggregate((factor1, factor2) => factor1 * factor2);
+        }
     }
 }

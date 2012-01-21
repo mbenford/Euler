@@ -5,7 +5,7 @@ using System.Text;
 using NUnit.Framework;
 using ProjectEuler.Tools;
 
-namespace ProjectEuler.Tests
+namespace ProjectEuler.Tests.ToolboxTests
 {
     [TestFixture]
     public class Get_Greatest_Common_Divisor

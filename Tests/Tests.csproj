@@ -47,6 +47,8 @@
     <Compile Include="TooboxTests\Check_If_a_Number_Is_Palindromic.cs" />
     <Compile Include="TooboxTests\Check_If_a_Number_Is_Prime.cs" />
     <Compile Include="TooboxTests\Factorize_Integer_Numbers.cs" />
+    <Compile Include="TooboxTests\Counts_All_Divisors_Of_An_Integer.cs" />
+    <Compile Include="TooboxTests\Gets_A_Sequence_Of_Triangle_Numbers.cs" />
     <Compile Include="TooboxTests\Get_Fibonacci_Sequence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TooboxTests\Get_Greatest_Common_Divisor.cs" />

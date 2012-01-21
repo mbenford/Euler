@@ -3,7 +3,7 @@ using System.Linq;
 using NUnit.Framework;
 using ProjectEuler.Tools;
 
-namespace ProjectEuler.Tests
+namespace ProjectEuler.Tests.ToolboxTests
 {
     [TestFixture]
     public class Factorize_Integer_Numbers
