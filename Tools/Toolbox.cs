@@ -193,6 +193,6 @@ namespace ProjectEuler.Tools
 
                 yield return number;
             }
-        }
+        }        
     }
 }

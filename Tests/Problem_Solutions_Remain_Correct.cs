@@ -86,6 +86,12 @@ namespace ProjectEuler.Tests
             Check(13, 5537376230);
         }
 
+        [Test]
+        public void Solution_For_Problem_14_Remains_Correct()
+        {
+            Check(14, 837799);
+        }
+
         private void Check(int problemId, BigInteger expectedValue)
         {
             Solution solution = GetSolution(problemId);
