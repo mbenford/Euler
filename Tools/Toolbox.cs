@@ -159,7 +159,7 @@ namespace ProjectEuler.Tools
             return grid;
         }
         
-        public static IEnumerable<long> GetTriangleNumbersSequence()
+        public static IEnumerable<long> TriangleNumbersSequence()
         {
             long i = 1;
             long x = 0;

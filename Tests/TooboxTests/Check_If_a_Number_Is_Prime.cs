@@ -2,78 +2,77 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NUnit.Framework;
 using ProjectEuler.Tools;
+using Xunit;
 
 namespace ProjectEuler.Tests.ToolboxTests
 {
-    [TestFixture]
     public class Check_If_a_Number_Is_Prime
     {
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_2()
         {
-            Assert.IsTrue(Toolbox.IsPrime(2));
+            Assert.True(Toolbox.IsPrime(2));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_3()
         {
-            Assert.IsTrue(Toolbox.IsPrime(3));
+            Assert.True(Toolbox.IsPrime(3));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_4()
         {
-            Assert.IsFalse(Toolbox.IsPrime(4));
+            Assert.False(Toolbox.IsPrime(4));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_5()
         {
-            Assert.IsTrue(Toolbox.IsPrime(5));
+            Assert.True(Toolbox.IsPrime(5));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_6()
         {
-            Assert.IsFalse(Toolbox.IsPrime(6));
+            Assert.False(Toolbox.IsPrime(6));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_7()
         {
-            Assert.IsTrue(Toolbox.IsPrime(7));
+            Assert.True(Toolbox.IsPrime(7));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_8()
         {
-            Assert.IsFalse(Toolbox.IsPrime(8));
+            Assert.False(Toolbox.IsPrime(8));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_9()
         {
-            Assert.IsFalse(Toolbox.IsPrime(9));
+            Assert.False(Toolbox.IsPrime(9));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_29()
         {
-            Assert.IsTrue(Toolbox.IsPrime(29));
+            Assert.True(Toolbox.IsPrime(29));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_13()
         {
-            Assert.IsTrue(Toolbox.IsPrime(13));
+            Assert.True(Toolbox.IsPrime(13));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_19()
         {
-            Assert.IsTrue(Toolbox.IsPrime(19));
+            Assert.True(Toolbox.IsPrime(19));
         }
     }
 }

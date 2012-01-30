@@ -12,7 +12,7 @@ namespace ProjectEuler.Problems
         {
             long result = 0;            
 
-            foreach (long number in Toolbox.GetTriangleNumbersSequence())
+            foreach (long number in Toolbox.TriangleNumbersSequence())
             {
                 if (Toolbox.GetTheNumberOfDivisors(number) > 500)
                 {

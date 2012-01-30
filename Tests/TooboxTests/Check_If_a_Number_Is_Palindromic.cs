@@ -1,130 +1,129 @@
 using System;
-using NUnit.Framework;
 using ProjectEuler.Tools;
+using Xunit;
 
 namespace ProjectEuler.Tests.TooboxTests
 {
-    [TestFixture]
     public class Check_If_a_Number_Is_Palindromic
     {
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_1()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(1));
+            Assert.True(Toolbox.IsPalindromic(1));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_2()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(2));
+            Assert.True(Toolbox.IsPalindromic(2));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_3()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(3));
+            Assert.True(Toolbox.IsPalindromic(3));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_4()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(4));
+            Assert.True(Toolbox.IsPalindromic(4));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_5()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(5));
+            Assert.True(Toolbox.IsPalindromic(5));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_6()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(6));
+            Assert.True(Toolbox.IsPalindromic(6));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_7()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(7));
+            Assert.True(Toolbox.IsPalindromic(7));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_8()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(8));
+            Assert.True(Toolbox.IsPalindromic(8));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_9()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(9));
+            Assert.True(Toolbox.IsPalindromic(9));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_10()
         {
-            Assert.IsFalse(Toolbox.IsPalindromic(10));
+            Assert.False(Toolbox.IsPalindromic(10));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_11()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(11));
+            Assert.True(Toolbox.IsPalindromic(11));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_12()
         {
-            Assert.IsFalse(Toolbox.IsPalindromic(12));
+            Assert.False(Toolbox.IsPalindromic(12));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_13()
         {
-            Assert.IsFalse(Toolbox.IsPalindromic(13));
+            Assert.False(Toolbox.IsPalindromic(13));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_99()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(99));
+            Assert.True(Toolbox.IsPalindromic(99));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_100()
         {
-            Assert.IsFalse(Toolbox.IsPalindromic(100));
+            Assert.False(Toolbox.IsPalindromic(100));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_121()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(121));
+            Assert.True(Toolbox.IsPalindromic(121));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_120()
         {
-            Assert.IsFalse(Toolbox.IsPalindromic(120));
+            Assert.False(Toolbox.IsPalindromic(120));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_98789()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(98789));
+            Assert.True(Toolbox.IsPalindromic(98789));
         }
 
-        [Test]
+        [Fact]
         public void Returns_True_When_Passing_123454321()
         {
-            Assert.IsTrue(Toolbox.IsPalindromic(123454321));
+            Assert.True(Toolbox.IsPalindromic(123454321));
         }
 
-        [Test]
+        [Fact]
         public void Returns_False_When_Passing_123454322()
         {
-            Assert.IsFalse(Toolbox.IsPalindromic(123454322));
+            Assert.False(Toolbox.IsPalindromic(123454322));
         }
 
     }

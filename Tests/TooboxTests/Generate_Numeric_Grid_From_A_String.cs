@@ -2,18 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NUnit.Framework;
 using ProjectEuler.Tools;
+using Xunit;
 
 namespace ProjectEuler.Tests.ToolboxTests
 {
-    [TestFixture]
     public class Generate_Numeric_Grid_From_A_String
     {
         private int[,] grid;
-
-        [TestFixtureSetUp]
-        public void InitializeAllTests()
+        
+        public Generate_Numeric_Grid_From_A_String()
         {
             // Arrange
             string value =
@@ -25,58 +23,58 @@ namespace ProjectEuler.Tests.ToolboxTests
             grid = Toolbox.GenerateGridFromString(value, 3, 3);
         }
 
-        [Test]
+        [Fact]
         public void Element_0x0_Should_Be_1()
         {
-            Assert.AreEqual(1, grid[0,0]);
+            Assert.Equal(1, grid[0,0]);
         }
 
-        [Test]
+        [Fact]
         public void Element_0x1_Should_Be_2()
         {
-            Assert.AreEqual(2, grid[0, 1]);
+            Assert.Equal(2, grid[0, 1]);
         }
 
-        [Test]
+        [Fact]
         public void Element_0x2_Should_Be_3()
         {
-            Assert.AreEqual(3, grid[0, 2]);
+            Assert.Equal(3, grid[0, 2]);
         }
 
-        [Test]
+        [Fact]
         public void Element_1x0_Should_Be_4()
         {
-            Assert.AreEqual(4, grid[1, 0]);
+            Assert.Equal(4, grid[1, 0]);
         }
 
-        [Test]
+        [Fact]
         public void Element_1x1_Should_Be_5()
         {
-            Assert.AreEqual(5, grid[1, 1]);
+            Assert.Equal(5, grid[1, 1]);
         }
 
-        [Test]
+        [Fact]
         public void Element_1x2_Should_Be_6()
         {
-            Assert.AreEqual(6, grid[1, 2]);
+            Assert.Equal(6, grid[1, 2]);
         }
 
-        [Test]
+        [Fact]
         public void Element_2x0_Should_Be_7()
         {
-            Assert.AreEqual(7, grid[2, 0]);
+            Assert.Equal(7, grid[2, 0]);
         }
 
-        [Test]
+        [Fact]
         public void Element_2x1_Should_Be_8()
         {
-            Assert.AreEqual(8, grid[2, 1]);
+            Assert.Equal(8, grid[2, 1]);
         }
 
-        [Test]
+        [Fact]
         public void Element_2x2_Should_Be_9()
         {
-            Assert.AreEqual(9, grid[2, 2]);
+            Assert.Equal(9, grid[2, 2]);
         }
     }
 }
