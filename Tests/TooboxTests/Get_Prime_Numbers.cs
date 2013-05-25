@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using ProjectEuler.Tools;
+﻿using System.Collections.Generic;
 using Xunit;
 
 namespace ProjectEuler.Tests.ToolboxTests

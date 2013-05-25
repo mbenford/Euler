@@ -1,5 +1,3 @@
-using System;
-using ProjectEuler.Tools;
 using Xunit;
 
 namespace ProjectEuler.Tests.TooboxTests

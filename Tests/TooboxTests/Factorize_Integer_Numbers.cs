@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using ProjectEuler.Tools;
+﻿using System.Linq;
 using Xunit;
 
 namespace ProjectEuler.Tests.ToolboxTests

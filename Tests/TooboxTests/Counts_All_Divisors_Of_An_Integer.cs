@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using ProjectEuler.Tools;
-using Xunit;
+﻿using Xunit;
 
 namespace ProjectEuler.Tests.TooboxTests
 {    
