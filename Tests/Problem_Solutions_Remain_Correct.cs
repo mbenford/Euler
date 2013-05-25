@@ -1,9 +1,8 @@
-﻿using System;
-using ProjectEuler.Problems;
-using System.Numerics;
+﻿using System.Numerics;
+using Euler.Problems;
 using Xunit;
 
-namespace ProjectEuler.Tests
+namespace Euler.Tests
 {
     public class Problem_Solutions_Remain_Correct
     {

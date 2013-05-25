@@ -8,8 +8,8 @@
     <ProjectGuid>{F11CA915-8949-45F6-854D-A2BCD3F3A262}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjectEuler.Tests</RootNamespace>
-    <AssemblyName>ProjectEuler.Tests</AssemblyName>
+    <RootNamespace>Euler.Tests</RootNamespace>
+    <AssemblyName>Euler.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

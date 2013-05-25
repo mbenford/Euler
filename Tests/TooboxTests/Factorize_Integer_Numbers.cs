@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Xunit;
 
-namespace ProjectEuler.Tests.ToolboxTests
+namespace Euler.Tests.TooboxTests
 {
     public class Factorize_Integer_Numbers
     {

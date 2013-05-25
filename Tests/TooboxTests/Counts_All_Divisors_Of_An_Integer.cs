@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace ProjectEuler.Tests.TooboxTests
+namespace Euler.Tests.TooboxTests
 {    
     public class Counts_All_Divisors_Of_An_Integer
     {

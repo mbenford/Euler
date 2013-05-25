@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Reflection;
+using Euler.Problems;
 
-namespace ProjectEuler.Problems
+namespace Euler
 {
     public static class ProblemFactory
     {

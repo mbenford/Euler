@@ -1,7 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
-namespace ProjectEuler.Problems
+namespace Euler.Problems
 {
     public class Problem_006 : Problem
     {

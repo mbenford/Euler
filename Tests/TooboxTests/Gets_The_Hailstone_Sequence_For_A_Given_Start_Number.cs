@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Xunit;
 
-namespace ProjectEuler.Tests.TooboxTests
+namespace Euler.Tests.TooboxTests
 {
     public class Gets_The_Hailstone_Sequence_For_A_Given_Start_Number
     {

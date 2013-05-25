@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace ProjectEuler.Tests.ToolboxTests
+namespace Euler.Tests.TooboxTests
 {
     public class Generate_Numeric_Grid_From_A_String
     {
