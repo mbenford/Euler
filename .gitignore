@@ -29,3 +29,8 @@ deploy
 deploy/*
 *.suo
 *.cache
+packages/
+
+# dotCover files #
+##################
+*.DotSettings
