@@ -21,6 +21,7 @@ Thumbs.db
 [Oo]bj/
 [Bb]in/
 [Bb]uild/
+[Oo]utput/
 *.user
 /TestResults
 *.vspscc

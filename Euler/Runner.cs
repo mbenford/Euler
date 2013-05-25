@@ -29,7 +29,7 @@ namespace ProjectEuler
         private static void DisplayResult(Problem problem, Result result)
         {
             Console.WriteLine("Problem #{0}", problem.Id);
-            Console.WriteLine("Solution: {0}\r\nTime taken: {1}s\r\n", result.Solution.Value, result.TimeTakenToSolve.TotalSeconds);
+            Console.WriteLine("Solution: {0}\r\nTime taken: {1}s", result.Solution.Value, result.TimeTakenToSolve.TotalSeconds);
         }   
     }
 }
