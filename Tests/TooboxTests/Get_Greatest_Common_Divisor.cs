@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace ProjectEuler.Tests.ToolboxTests
+namespace Euler.Tests.TooboxTests
 {
     public class Get_Greatest_Common_Divisor
     {

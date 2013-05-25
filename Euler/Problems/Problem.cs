@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace ProjectEuler.Problems
+namespace Euler.Problems
 {
     public abstract class Problem
     {

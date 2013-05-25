@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Linq;
 using System.Numerics;
 
-namespace ProjectEuler.Problems
+namespace Euler.Problems
 {
     public class Problem_008 : Problem
     {

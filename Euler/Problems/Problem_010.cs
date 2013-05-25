@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Numerics;
+﻿using System.Linq;
 
-namespace ProjectEuler.Problems
+namespace Euler.Problems
 {
     public class Problem_010 : Problem
     {

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace ProjectEuler.Problems
+namespace Euler.Problems
 {
     public class Problem_014 : Problem
     {

@@ -2,7 +2,7 @@
 using System.Linq;
 using Xunit;
 
-namespace ProjectEuler.Tests.TooboxTests
+namespace Euler.Tests.TooboxTests
 {
     public class Gets_A_Sequence_Of_Triangle_Numbers
     {

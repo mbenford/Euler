@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace ProjectEuler.Tests.TooboxTests
+namespace Euler.Tests.TooboxTests
 {
     public class Check_If_a_Number_Is_Palindromic
     {

@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <SolutionFile
-			Include="$(SourceDir)\ProjectEuler.sln" />
+			Include="$(SourceDir)\Euler.sln" />
   </ItemGroup>
 
   <Target Name="Clean">
@@ -33,7 +33,7 @@
 
   <Target Name="Test" DependsOnTargets="Build">
     <xunit 
-      Assembly="$(SourceDir)\Tests\bin\Release\ProjectEuler.Tests.dll" />
+      Assembly="$(SourceDir)\Tests\bin\Release\Euler.Tests.dll" />
   </Target>
 
   <Target Name="Make">

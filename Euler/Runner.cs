@@ -1,8 +1,8 @@
 ﻿using System;
-using ProjectEuler.Problems;
 using System.Diagnostics;
+using Euler.Problems;
 
-namespace ProjectEuler
+namespace Euler
 {
     public static class Runner
     {

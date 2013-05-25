@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Xunit;
 
-namespace ProjectEuler.Tests.ToolboxTests
+namespace Euler.Tests.TooboxTests
 {
     public class Get_Fibonacci_Sequence
     {
