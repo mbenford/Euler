@@ -217,5 +217,18 @@ namespace Euler
         {
             return Factorial(index * 2) / BigInteger.Pow(Factorial(index), 2); 
         }
+
+        public static IEnumerable<int> GetDigitsOf(BigInteger number)
+        {
+            var digits = new List<int>();
+
+            while (number > 0)
+            {
+                digits.Add((int)BigInteger.Remainder(number, 10));
+                number /= 10;
+            }
+
+            return (digits as IEnumerable<int>).Reverse();
+        }
     }
 }
