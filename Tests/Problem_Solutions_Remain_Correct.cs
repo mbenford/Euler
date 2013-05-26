@@ -90,6 +90,12 @@ namespace Euler.Tests
             Check(14, 837799);
         }
 
+        [Fact]
+        public void Solution_For_Problem_15_Remains_Correct()
+        {
+            Check(15, 137846528820);
+        }
+
         private void Check(int problemId, BigInteger expectedValue)
         {
             Solution solution = GetSolution(problemId);

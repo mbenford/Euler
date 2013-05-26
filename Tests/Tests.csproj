@@ -36,6 +36,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentAssertions">
+      <HintPath>..\packages\FluentAssertions.2.0.1\lib\net45\FluentAssertions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
@@ -55,7 +58,9 @@
     <Compile Include="TooboxTests\Check_If_a_Number_Is_Prime.cs" />
     <Compile Include="TooboxTests\Factorize_Integer_Numbers.cs" />
     <Compile Include="TooboxTests\Counts_All_Divisors_Of_An_Integer.cs" />
+    <Compile Include="TooboxTests\Gets_A_Sequence_Of_Central_Binomial_Coefficients.cs" />
     <Compile Include="TooboxTests\Gets_A_Sequence_Of_Triangle_Numbers.cs" />
+    <Compile Include="TooboxTests\Gets_The_Factorial_Of_A_Number.cs" />
     <Compile Include="TooboxTests\Gets_The_Hailstone_Sequence_For_A_Given_Start_Number.cs" />
     <Compile Include="TooboxTests\Get_Fibonacci_Sequence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

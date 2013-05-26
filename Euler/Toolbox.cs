@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
+using System.Numerics;
 
 namespace Euler
 {
@@ -79,7 +80,7 @@ namespace Euler
         {
             return GetLeastCommonMultiple(numbers.ToArray());
         }
-        
+
         public static long GetLeastCommonMultiple(params long[] numbers)
         {
             return numbers.Aggregate((a, b) => GetLCM(a, b));
@@ -101,20 +102,20 @@ namespace Euler
         }
 
         private static long GetGCD(long a, long b)
-        {            
+        {
             long min = Math.Min(a, b);
             long max = Math.Max(a, b);
             if (min == 0) return max;
 
             return GetGCD(b, a % b);
         }
-        
+
         public static IEnumerable<long> GetPrimeNumbers(int limit)
         {
             BitArray numbers = new BitArray(limit - 1, true);
 
             Func<int, int> GetNext = (n) =>
-            {                
+            {
                 for (int i = n + 1; i <= limit; i++)
                 {
                     if (numbers[i - 2]) return i;
@@ -132,13 +133,13 @@ namespace Euler
                 }
                 number = GetNext(number);
             }
-                                                           
+
             for (int i = 0; i < numbers.Length; i++)
             {
                 if (numbers[i]) yield return i + 2;
             }
         }
-        
+
         public static int[,] GenerateGridFromString(string value, int rows, int cols)
         {
             string[] values = value.Split(' ');
@@ -156,7 +157,7 @@ namespace Euler
 
             return grid;
         }
-        
+
         public static IEnumerable<long> TriangleNumbersSequence()
         {
             long i = 1;
@@ -167,7 +168,7 @@ namespace Euler
                 yield return x;
             }
         }
-        
+
         public static int GetTheNumberOfDivisors(long number)
         {
             if (number == 1) return 1;
@@ -177,10 +178,10 @@ namespace Euler
                 .Select(factor => factor.Count() + 1)
                 .Aggregate((factor1, factor2) => factor1 * factor2);
         }
-        
+
         public static IEnumerable<long> GetHailstoneSequence(int start)
         {
-            long number = start * 2;            
+            long number = start * 2;
 
             while (number != 1)
             {
@@ -191,6 +192,30 @@ namespace Euler
 
                 yield return number;
             }
-        }        
+        }
+
+        public static BigInteger Factorial(int number)
+        {
+            if (number > 1)
+                return Factorial(1, number);
+            
+            return 1;
+        }
+
+        private static BigInteger Factorial(int number, int length)
+        {
+            if (length > 1)
+            {
+                int l = length / 2;
+                return Factorial(number, l) * Factorial(number + l, length - l);
+            }
+
+            return number;
+        }
+
+        public static BigInteger GetCentralBinomialCoefficient(int index)
+        {
+            return Factorial(index * 2) / BigInteger.Pow(Factorial(index), 2); 
+        }
     }
 }
