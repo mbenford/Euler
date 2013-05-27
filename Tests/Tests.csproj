@@ -64,6 +64,7 @@
     <Compile Include="TooboxTests\Counts_All_Divisors_Of_An_Integer.cs" />
     <Compile Include="TooboxTests\Gets_A_Sequence_Of_Central_Binomial_Coefficients.cs" />
     <Compile Include="TooboxTests\Gets_A_Sequence_Of_Triangle_Numbers.cs" />
+    <Compile Include="TooboxTests\Converts_Numbers_To_Words.cs" />
     <Compile Include="TooboxTests\Gets_The_Factorial_Of_A_Number.cs" />
     <Compile Include="TooboxTests\Gets_The_Hailstone_Sequence_For_A_Given_Start_Number.cs" />
     <Compile Include="TooboxTests\Gets_The_Digits_Of_A_Number.cs" />
