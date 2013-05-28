@@ -1,5 +1,4 @@
 ﻿using FluentAssertions;
-using Xunit;
 using Xunit.Extensions;
 
 namespace Euler.Tests.TooboxTests
