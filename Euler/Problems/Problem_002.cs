@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Numerics;
 
 namespace Euler.Problems
 {
@@ -6,10 +7,10 @@ namespace Euler.Problems
     {
         public override Solution Solve()
         {
-            long value = Toolbox.FibonacciSequence()
-                .TakeWhile(x => x <= 4000000)
-                .Where(x => x % 2 == 0)
-                .Sum();
+            BigInteger value = Toolbox.FibonacciSequence()
+                                      .TakeWhile(x => x <= 4000000)
+                                      .Where(x => x % 2 == 0)
+                                      .Aggregate(BigInteger.Add);
 
             return new Solution(value);
         }

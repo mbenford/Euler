@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Numerics;
 
 namespace Euler.Problems
 {
@@ -6,7 +8,12 @@ namespace Euler.Problems
     {
         public override Solution Solve()
         {
-            throw new NotImplementedException();
+            int index = Toolbox.FibonacciSequence()
+                               .TakeWhile(x => (int)BigInteger.Log10(x) + 1 < 1000)
+                               .Count();
+
+            return new Solution(index + 1);
         }
     }
 }
+

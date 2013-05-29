@@ -8,17 +8,18 @@ namespace Euler
 {
     public static class Toolbox
     {
-        public static IEnumerable<long> FibonacciSequence()
+        public static IEnumerable<BigInteger> FibonacciSequence()
         {
-            long x = 0;
-            long y = 1;
+            BigInteger x = 0;
+            BigInteger y = 1;
 
             while (true)
             {
-                long sum = x + y;
+                yield return y;
+
+                BigInteger sum = x + y;
                 x = y;
                 y = sum;
-                yield return y;
             }
         }
 
