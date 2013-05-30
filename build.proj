@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <UsingTask
-		AssemblyFile="$(SourceDir)\.build\xunit.runner.msbuild.dll"
+    AssemblyFile="$(SourceDir)\.build\xunit.runner.msbuild.dll"
 		TaskName="Xunit.Runner.MSBuild.xunit" />
 
   <ItemGroup>
@@ -33,14 +33,23 @@
 
   <Target Name="Test" DependsOnTargets="Build">
     <xunit 
-      Assembly="$(SourceDir)\Tests\bin\Release\Euler.Tests.dll" />
+      Assembly="$(SourceDir)\Tests\bin\Release\Euler.Tests.dll"
+      ShadowCopy="false" />
   </Target>
 
   <Target Name="Make">
     <CallTarget
-			Targets="Clean;Build;Test" />
+		  Targets="Clean;Build;Test" />
+    
+    <ItemGroup>
+      <DataFiles Include="$(SourceDir)\Euler\bin\Release\Data\*.*" />
+    </ItemGroup>
+    
     <Copy
-			SourceFiles="$(SourceDir)\Euler\bin\Release\Euler.exe"
-			DestinationFolder="$(OutputDir)" />
+		  SourceFiles="$(SourceDir)\Euler\bin\Release\Euler.exe"
+		  DestinationFolder="$(OutputDir)" />
+    <Copy
+		  SourceFiles="@(DataFiles)"
+		  DestinationFolder="$(OutputDir)\Data\%(RecursiveDir)" />	
   </Target> 
 </Project>
