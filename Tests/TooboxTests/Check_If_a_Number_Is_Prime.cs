@@ -6,6 +6,7 @@ namespace Euler.Tests.TooboxTests
     public class Check_If_a_Number_Is_Prime
     {
         [Theory]
+        [InlineData(1, false)]
         [InlineData(2, true)]
         [InlineData(3, true)]
         [InlineData(4, false)]

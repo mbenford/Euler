@@ -73,6 +73,7 @@
     <Compile Include="TooboxTests\Get_Greatest_Common_Divisor.cs" />
     <Compile Include="TooboxTests\Get_Least_Common_Multiple.cs" />
     <Compile Include="TooboxTests\Get_Prime_Numbers.cs" />
+    <Compile Include="TooboxTests\Rotates_An_Integer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

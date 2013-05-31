@@ -45,7 +45,7 @@ namespace Euler
 
         public static bool IsPrime(long number)
         {
-            bool isPrime = true;
+            bool isPrime = number > 1;
 
             int max = (int)Math.Truncate(Math.Sqrt(number));
             for (int i = 2; i <= max; i++)
@@ -283,6 +283,13 @@ namespace Euler
             }
 
             return words;
+        }
+
+        public static long RotateInteger(long number)
+        {
+            int digits = (int)Math.Log10(number);
+            int factor = (int)Math.Pow(10, digits);
+            return number / 10 + factor * (number % 10);
         }
     }
 }
