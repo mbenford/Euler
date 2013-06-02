@@ -287,9 +287,32 @@ namespace Euler
 
         public static long RotateInteger(long number)
         {
-            int digits = (int)Math.Log10(number);
-            int factor = (int)Math.Pow(10, digits);
+            var digits = (int)Math.Log10(number);
+            var factor = (int)Math.Pow(10, digits);
             return number / 10 + factor * (number % 10);
+        }
+
+        public static IEnumerable<IEnumerable<T>> GetPowerSet<T>(T[] set)
+        {
+            return from i in Enumerable.Range(0, 1 << set.Length)
+                   select
+                       from j in Enumerable.Range(0, set.Length)
+                       where (i & (1 << j)) != 0
+                       select set[j];
+        }
+
+        public static IEnumerable<long> GetProperDivisors(long number)
+        {
+            var factors = Factorize(number).Select((x, y) => new { Factor = x, Index = y }).ToArray();
+            
+            var divisors = new HashSet<long>();
+            foreach (long divisor in GetPowerSet(factors).Select(p => p.Select(x => x.Factor).Aggregate(1L, (x, y) => x * y)))
+            {
+                if (divisor != number)
+                    divisors.Add(divisor);
+            }
+
+            return divisors;
         }
     }
 }

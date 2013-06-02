@@ -31,6 +31,7 @@ namespace Euler.Tests
         [InlineData(22, 871198282)]        
         [InlineData(25, 4782)]        
         [InlineData(35, 55)]        
+        [InlineData(21, 31626)]        
         public void Checks_If_Solution_Remains_Correct(int problemId, long expectedValue)
         {
             // Arrange
